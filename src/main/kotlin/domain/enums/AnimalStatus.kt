@@ -3,7 +3,8 @@ package domain.enums
 enum class AnimalStatus {
     HEALTHY,
     SICK,
-    TREATMENT
+    INJURED,
+    DISPLACED
 }
 
 enum class AnimalSex {

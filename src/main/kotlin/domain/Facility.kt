@@ -1,5 +1,6 @@
 package domain
 
-class Facility {
+class Facility(name: String) {
+    
     
 }
