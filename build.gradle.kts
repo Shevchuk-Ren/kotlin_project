@@ -29,7 +29,7 @@ kotlin {
 
 compose.desktop {
     application {
-        mainClass = "MainKt"
+        mainClass = "DesktopMainKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Msi)
