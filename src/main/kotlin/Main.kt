@@ -22,6 +22,4 @@ fun main() {
     println(animal2.sex)
     println(animal2.animalId)
     println(animal2.species)
-    
-    
 }
