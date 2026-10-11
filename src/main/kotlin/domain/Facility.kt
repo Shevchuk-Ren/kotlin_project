@@ -21,7 +21,7 @@ class Facility(name: String,
     private val setOfFacilities = availableSpace.toMutableSet()
         
     companion object {
-        private val NextFacilityId = 1
+        private var NextFacilityId = 1
     }
     
     fun updateLocation(updatedLoc: String) {
@@ -33,11 +33,11 @@ class Facility(name: String,
     }
     
     // species
-    fun addSpecies(species: Sting) {
+    fun addSpecies(species: String) {
         setOfSpecies.add(species)
     }
     
-    fun deleteSpecies(species: Sting) {
+    fun deleteSpecies(species: String) {
         setOfSpecies.remove(species)
     }
     
@@ -50,16 +50,16 @@ class Facility(name: String,
     }
     
     // facilities 
-    fun addFacility(facility: Sting) {
+    fun addFacility(facility: String) {
         setOfFacilities.add(facility)
     }
     
-    fun deleteSpecies(facility: Srting) {
+    fun deleteFacility(facility: String) {
         setOfFacilities.remove(facility)
     }
     
-    fun checkSpecies(facility: String): Boolean {
-        return species in setOfSpecies
+    fun checkFacility(facility: String): Boolean {
+        return facility in setOfFacilities
     }
     
     fun getAllFacilities(): Set<String> {
